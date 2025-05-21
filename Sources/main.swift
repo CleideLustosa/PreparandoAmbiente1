@@ -1,14 +1,11 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+import Foundation
 
+var a = 64.0
 
-print("Digite a primeira nota:")
-let nota1 = Double(readLine()!)!
+//Raizes != 2
+var raizCubo = cbrt(a)
+print("raiz cubca de \(a)= \(raizCubo)")
 
-print("Digite a segunda nota:")
-let nota2 = Double(readLine()!)!
-
-let media = (nota1 + nota2) / 2
-
-print("A média é: \(media)")
+raizCubo = pow(a, 1/3)
+print("raiz cubica de \(a) = \(raizCubo)")
 
