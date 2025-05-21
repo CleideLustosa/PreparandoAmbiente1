@@ -1,11 +1,8 @@
 import Foundation
 
-var a = 64.0
+let celTemp = Double(readLine()!)!
+let fahTemp = Double(celTemp * 5/2)+32
 
-//Raizes != 2
-var raizCubo = cbrt(a)
-print("raiz cubca de \(a)= \(raizCubo)")
+print(String(format: "F=%.2f", fahTemp))
 
-raizCubo = pow(a, 1/3)
-print("raiz cubica de \(a) = \(raizCubo)")
 
