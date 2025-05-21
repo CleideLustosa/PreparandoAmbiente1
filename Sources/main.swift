@@ -2,11 +2,13 @@
 // https://docs.swift.org/swift-book
 
 
-print("Digite seu nome:")
-let nome = readLine()
+print("Digite a primeira nota:")
+let nota1 = Double(readLine()!)!
 
-print("Digite sua idade:")
-let idade = readLine()
+print("Digite a segunda nota:")
+let nota2 = Double(readLine()!)!
 
-print("Olá, \(nome!)! Você tem \(idade!) anos.")
+let media = (nota1 + nota2) / 2
+
+print("A média é: \(media)")
 
