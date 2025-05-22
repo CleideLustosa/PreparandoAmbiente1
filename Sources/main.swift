@@ -17,8 +17,8 @@ import Foundation
 
 // switch case 
 
-print("Escolha sua bebida:")
-let opcaoProduto = readLine()!
+//print("Escolha sua bebida:")
+/let opcaoProduto = readLine()!
 let produto = Int (opcaoProduto)!
 
 switch produto {
@@ -31,6 +31,28 @@ case 3:
 default:
     print("Opção invalida!")
     
+}
+
+//Atividade de entrega
+
+import Foundation
+
+print("Informe sua idade:")
+let idade = Int(readLine()!)!
+
+print("Informe sua altura (em metros):")
+let altura = Double(readLine()!)!
+
+print("Está acompanhado? (sim/não)")
+let entrada = readLine()!.lowercased()
+let acompanhado = (entrada == "sim")
+
+if idade >= 12 && altura >= 1.40 {
+    print("Entrada liberada! Tudo certo com sua idade e altura.")
+} else if idade == 10 && acompanhado {
+    print("Entrada liberada! Tem 10 anos e está acompanhado.")
+} else {
+    print("Acesso negado! Lamento precisa de autorização.")
 }
 
 
