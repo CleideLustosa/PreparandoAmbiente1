@@ -1,10 +1,9 @@
 import Foundation
 
+let A = Int(readLine()!)!
+let B = Int(readLine()!)!
 
-let raio = Double(readLine()!)!
-let pi = 3.14159
+let X = A + B
+print("X = \(X)")
 
-let area = pi * pow(raio, 2)
-
-print(String(format: "A=%.4f\n", area))
 
