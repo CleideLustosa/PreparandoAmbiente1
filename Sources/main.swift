@@ -1,35 +1,34 @@
 import Foundation
 
-var a: Double = -1
-var b: Double = -1
+print("Digite o código do produto:")
+let codigo = Int(readLine()!)!
 
-while a < 0 || a > 10 {
-    print("Digite a nota A:")
-    if let entrada = readLine(), let nota = Double(entrada) {
-        if nota >= 0 && nota <= 10 {
-            a = nota
-        } else {
-            print("Nota inválida. Digite um valor entre 0 e 10.")
-        }
-    } else {
-        print("Entrada inválida. Digite um número.")
-    }
+print("Digite a quantidade:")
+let quantidade = Int(readLine()!)!
+
+var preco: Double
+
+switch codigo {
+case 1:
+    preco = 4.00
+case 2:
+    preco = 4.50
+case 3:
+    preco = 5.00
+case 4:
+    preco = 2.00
+case 5:
+    preco = 1.50
+default:
+    preco = 0.0
 }
 
-while b < 0 || b > 10 {
-    print("Digite a nota B:")
-    if let entrada = readLine(), let nota = Double(entrada) {
-        if nota >= 0 && nota <= 10 {
-            b = nota
-        } else {
-            print("Nota inválida. Digite um valor entre 0 e 10.")
-        }
-    } else {
-        print("Entrada inválida. Digite um número.")
-    }
+if preco > 0 {
+    let total = preco * Double(quantidade)
+    print("Total: R$ \(String(format: "%.2f", total))")
+} else {
+    print("Código inválido.")
 }
 
-let media = (a * 3.5 + b * 7.5) / 11.0
-print(String(format: "MEDIA = %.5f", media))
 
 
