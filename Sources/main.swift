@@ -1,10 +1,8 @@
 import Foundation
 
-let A = Int(readLine()!)!
-let B = Int(readLine()!)!
+let a = Double(readLine()!)!
+let b = Double(readLine()!)!
 
-let soma = A + B
-print("SOMA = \(soma)")
-
-
+let media = (a * 3.5 + b * 7.5) / 11
+print(String(format: "MEDIA = %.5f", media))
 
