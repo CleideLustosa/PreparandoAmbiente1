@@ -44,6 +44,15 @@ while (addTarefa){
 
 tarefa = adicionarTarefa(tarefa:tarefa)   
 
+func removerTarefa(tarefa: [String]) -> String {
+    visualizarTarefa(lista)
+    print("Escolha a tarefa para remover."){
+        for in tarefa{
+            
+        }
+    }
+
+}
 
 
 
