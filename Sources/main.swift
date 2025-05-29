@@ -1,15 +1,49 @@
 import Foundation
 
-func somaElementos(array: [Int]) -> Int{
-    var soma = 0
-    for num in array {
-        soma += num   
-    }
-    return soma
+
+var tarefa: [String] = []
+
+func mostrarMenu(){
+    print("""
+    Menu To-Do List
+    1. Adicionar Tarefa
+    2. Remover Tarefa
+    3. Alterar Tarefa
+    4. Vizualiazar Tarefa
+    5. Sair
+    Escolha uma opção.
+    """)
 }
 
-let numeros = [1,2,3]
-print(somaElementos(array: numeros))
+func adicionarTarefa(tarefa: [String])-> String{
+    var lista = tarefa
+    print("Digite sua tarefa: ")
+    if let novaTarefa = readLine(), !novaTarefa.isEmpty{
+        lista.append(novaTarefa)
+        print("Tarefa adiconada com sucesso!")        
+    }else {
+        print("Tarefa inválida.")
+        
+    } 
+    return lista 
+
+}
+
+// criar variavel 
+let entrada = readLine()!
+var addTarefa = "Estudar"
+
+
+while (addTarefa){
+    addTarefa = String(entrada)!
+    print("Tarefa Adicionada")
+}else {
+    print("Sair")
+    
+}
+
+tarefa = adicionarTarefa(tarefa:tarefa)   
+
 
 
 
