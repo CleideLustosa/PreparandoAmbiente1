@@ -22,7 +22,6 @@ func adicionarTarefa(tarefa: [String]) -> [String] {
     } else {
         print("Tarefa inválida.")
     } 
-
     return lista
 }
 
@@ -34,7 +33,7 @@ func removerTarefa(tarefas: [String]) -> [String] {
         return lista
     }
 
-    print("Tarefas:")
+    print("Lista de Tarefas:")
     var contador = 1
     for tarefa in lista {
         print("\(contador). \(tarefa)")
@@ -48,7 +47,6 @@ func removerTarefa(tarefas: [String]) -> [String] {
     } else {
         print("Número inválido.")
     }
-
     return lista
 }
 
@@ -68,7 +66,7 @@ func alterarTarefa(tarefas: [String]) -> [String] {
 
     print("Digite o número da tarefa para alterar:")
     if let entrada = readLine(), let numero = Int(entrada), numero > 0, numero <= lista.count {
-        print("Digite a nova tarefa:")
+        print("Digite a alteração da sua tarefa:")
         if let novaTarefa = readLine(), !novaTarefa.isEmpty {
             lista[numero - 1] = novaTarefa
             print("Tarefa alterada com sucesso!")
@@ -76,9 +74,10 @@ func alterarTarefa(tarefas: [String]) -> [String] {
             print("Texto inválido.")
         }
     } else {
-        print("Número inválido.")
+        print("""
+        Número inválido.
+        """)
     }
-
     return lista
 }
 
